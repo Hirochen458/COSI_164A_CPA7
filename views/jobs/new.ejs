@@ -1,0 +1,37 @@
+<div class="data-form">
+    <form action="/jobs/create" method="POST">
+      <h2>Create a new job:</h2>
+      <label for="title">Job Title:</label>
+      <input type="text" id="title" name="title" required>
+  
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" required>
+  
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      <br>
+      <label for="description">Job Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      <br>
+      <label for="requirements">Job Requirements:</label>
+      <textarea id="requirements" name="requirements" required></textarea>
+      <br>
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" required>
+      <br>
+      <label for="contactEmail">Contact Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" required>
+  
+      <label for="contactPhone">Contact Phone:</label>
+      <input type="tel" id="contactPhone" name="contactPhone" required>
+      <br>
+  
+      <label for="postDate">Post Date:</label>
+      <input type="date" id="postDate" name="postDate" required>
+  
+      <label for="deadlineDate">Deadline Date:</label>
+      <input type="date" id="deadlineDate" name="deadlineDate" required>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>

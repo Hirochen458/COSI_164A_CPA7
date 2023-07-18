@@ -1,0 +1,27 @@
+<div class="data-form">
+    <form method="POST" action="<%=`/events/${event._id}/update?_method=PUT`%>">
+      <h2>Edit event:</h2>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" value="<%= event.title %>" required><br>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required><%= event.description %></textarea><br>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" value="<%= event.location %>" required><br>
+      
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" value="<%= event.startDate.toISOString().substring(0,10) %>" required>
+      
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate" value="<%= event.endDate.toISOString().substring(0,10) %>" required><br>
+      
+      <label for="isOnline">Is Online:</label>
+      <input type="checkbox" id="isOnline" name="isOnline" value="<%= event.isOnline %>" value="true"><br>
+      
+      <label for="registrationLink">Registration Link:</label>
+      <input type="text" id="registrationLink" name="registrationLink" value="<%= event.registrationLink %>"><br>
+      
+      <button type="submit">Update</button> 
+
+      
+    </form>
+  </div>
